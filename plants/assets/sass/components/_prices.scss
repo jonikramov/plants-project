@@ -1,0 +1,136 @@
+.prices {
+    background-color: $color-light;
+    padding-top: 40px;
+    padding-bottom: 132px;
+}
+
+.prices-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-title {
+    @extend %font-primary;
+    @include font($size: 4.0rem, $height: 4.841rem, $weight:700);
+    color: $color-black;
+    margin-top: 5px;
+}
+
+.prices-lists {
+    margin-top: 60px;
+    width: 332px;
+    height: 282px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    padding: 34px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.prices-list {
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: $color-bg;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.prices-list__title {
+    @extend %font-primary;
+    @include font($size: 2.0rem, $height: 2.0rem, $weight:700);
+    color: $color-black;
+}
+
+.prices-list__dropdown {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-dropdown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.prices-list__dropdown > img {
+    width: 4px;
+    height: 2.35px;
+}
+
+.prices-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.prices-subtitle {
+    @extend %font-primary;
+    @include font($size: 4.0rem, $height: 5.0rem, $weight:700);
+    color: $color-black;
+    width: 453px;
+    text-align: right;
+}
+
+.prices-leafes {
+    position: relative;
+}
+
+.prices-leaf-top {
+    background: url(../../assets/img/prices/top.jpg);
+    width: 207px;
+    height: 170px;
+    position: absolute;
+    top: -38px;
+    right: 83px;
+}
+
+.prices-leaf-left {
+    background: url(../../assets/img/prices/left.jpg);
+    width: 93px;
+    height: 95px;
+    position: absolute;
+    top: 113px;
+    right: 181px;
+    z-index: 1;
+}
+
+.prices-leaf-right {
+    background: url(../../assets/img/prices/right.jpg);
+    width: 95px;
+    height: 92px;
+    position: relative;
+    top: 47px;
+    left: 8px;
+    z-index: 1;
+}
+
+.prices-leaf-bottom {
+    background: url(../../assets/img/prices/bottom.jpg);
+    background-repeat: no-repeat;
+    width: 207px;
+    height: 170px;
+    position: absolute;
+    top: 117px;
+    right: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

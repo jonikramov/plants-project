@@ -1,0 +1,96 @@
+.welcome {
+    background-color: $color-bg;
+    padding-bottom: 126px;
+}
+
+.welcome-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leafes {
+    position: relative;
+}
+
+.leaf-top {
+    background: url(../../assets/img/welcome/leaf-top.png);
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 224px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.leaf-top {
+    background: url(../../assets/img/welcome/leaf-top.png);
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 284px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.leaf-left {
+    background: url(../../assets/img/welcome/leaf-left.png);
+    background-repeat: no-repeat;
+    width: 119px;
+    height: 118px;
+    position: absolute;
+    top: 191px;
+    left: -12px;
+}
+
+.leaf-bottom {
+    background: url(../../assets/img/welcome/leaf-bottom.png);
+    background-repeat: no-repeat;
+    width: 223px;
+    height: 224px;
+    position: absolute;
+    top: 191px;
+    left: 94px;
+}
+
+.leaf-right-top {
+    background: url(../../assets/img/welcome/leaf-right-top.png);
+    background-repeat: no-repeat;
+    width: 223px;
+    height: 224px;
+    position: absolute;
+    top: 102px;
+    left: 246px;
+}
+
+.leaf-right-bottom {
+    background: url(../../assets/img/welcome/leaf-right-bottom.png);
+    background-repeat: no-repeat;
+    width: 147px;
+    height: 114px;
+    position: absolute;
+    top: 250px;
+    left: 305px;
+}
+
+.welcome-info {
+    max-width: 558px;
+    padding: 50px 0 0 0 ;
+}
+
+.welcome-info__text {
+    margin-top: 42px;
+    max-width: 535px;
+}
+
+.welcome-info__button {
+    margin-top: 48px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+/*  @mixin media-dekstop - @include media-dekstop */
+
+
+@mixin font ($size, $height: $size, $weight: normal, $style: normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+
+@mixin media-dekstop {
+    @media (max-width: 1435px) { @content;}
+}
+
+@mixin media-laptop {
+    @media (max-width: 1150px) { @content;}
+}
+
+@mixin media-tablet {
+    @media (max-width: 800px) { @content;}
+}
+
+@mixin media-mobile {
+    @media (max-width: 600px) { @content;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

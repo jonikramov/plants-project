@@ -1,0 +1,36 @@
+@import "base/normalize";
+
+
+// Abstracts
+@import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholder";
+@import "abstracts/typography";
+
+// Base
+@import "base/buttons";
+@import "base/base";
+@import "base/logo";
+@import "base/icons";
+@import "base/hamburger";
+@import "base/popup";
+
+// Layouts
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+
+@import "components/welcome";
+@import "components/about";
+@import "components/service";
+@import "components/prices";
+@import "components/contacts";
+
+
+
+
+
+
+

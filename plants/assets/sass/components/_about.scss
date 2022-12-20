@@ -1,0 +1,67 @@
+.about {
+    background-color: $color-light;
+    padding: 82px 0 105px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info {
+    max-width: 612px;
+    padding-top: 68px;
+
+}
+
+.about-info__title {
+    width: 463px;
+}
+
+.about-info__text {
+    margin-top: 40px;
+    @include font($size: 2.0rem, $height: 3.0rem, $weight:400);
+}
+
+.about-picture {
+    background: url(../../assets/img/about/houseplant.jpg);
+    background-repeat: no-repeat;
+    width: 464px;
+    height: 479px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

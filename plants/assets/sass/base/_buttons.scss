@@ -1,0 +1,106 @@
+// .button {
+//     @extend %font-primary;
+//     @include font($size: 1.6rem, $height: 2.2rem, $weight:500);
+//     color: $color-light;
+//     background: $color-additional;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+//     border: none;
+//     cursor: pointer;
+//     @extend %transition;
+//     user-select: none;
+//     border-radius: 10px;
+
+
+//     &_header {
+//         padding: 10px 30px;
+//         @include media-laptop {
+//             display: none;
+//         }
+//         &:hover {
+//             color: $color-additional;
+//             background: $color-light;
+//         }
+//     }
+
+//     &_primary {
+//         @include font($size: 2.4rem, $height: 3.2rem, $weight:500);
+//         padding: 13.5px 32.5px;
+
+//         @include media-tablet {
+//             padding: 7.5px 9px;
+//             @include font($size: 1.1rem, $height: 1.455rem, $weight:500);
+
+//         }
+
+//         &:hover {
+//             background: $color-primary;
+//         }
+//     }
+
+//     &_add {
+//         @include font($size: 2.4rem, $height: 3.2rem, $weight:500);
+//         display: flex;
+//         justify-content: center;
+//         gap: 12.5px;
+//         align-items: center;
+//         width: 228px;
+//         height: 59px;
+
+//         &:hover {
+//             background: $color-primary;
+//         }
+
+
+
+//         @include media-mobile {
+//             @include font($size: 1.1rem, $height: 1.46rem, $weight:500);
+//             width: 92px;
+//             height: 30px;
+//             gap: 6.6px;
+//         }
+//     }
+// }
+
+.button-primary {
+    display: block;
+    width: 161px;
+    height: 50px;
+    @extend %font-add;
+    @include font($size: 2.0rem, $height: 2.6rem, $weight:400);
+    color: $color-orange;
+    background: transparent;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    @extend %transition;
+    border: 1px solid $color-orange;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $color-orange;
+        color: $color-light;
+    }
+}
+
+.button-add {
+    display: block;
+    width: 158.65px;
+    height: 44px;
+    @extend %font-add;
+    @include font($size: 1.6rem, $height: 2.0rem, $weight:400);
+    color: $color-orange;
+    background: transparent;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    @extend %transition;
+    border: 2px solid $color-orange;
+    border-radius: 10px;
+    padding: 12px 25px;
+
+    &:hover {
+        background-color: $color-orange;
+        color: $color-light;
+    }
+
+}
