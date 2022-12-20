@@ -1,0 +1,83 @@
+.service {
+    background-color: $color-bg;
+    padding: 35px 0 119px;
+}
+
+.service-info {
+    display: flex;
+    gap: 140px;
+
+}
+
+.service-title {
+    max-width: 306px;
+}
+
+.service-buttons {
+    margin-top: 29px;
+    display: flex;
+    gap: 38px;
+
+}
+
+
+
+.service-items {
+    margin-top: 87px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    column-gap: 117px;
+}
+
+.service-item {
+    width: 329px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid $color-border;
+}
+
+.service-item__picture > img {
+    border-radius: 20px 20px 0 0;
+}
+
+.service-item__info__title {
+    @extend %font-primary;
+    @include font($size: 2.0rem, $height: 2.0rem, $weight:700);
+    color: $color-orange;
+    text-align: center;
+}
+
+.service-item__info__text {
+    @extend %font-primary;
+    @include font($size: 1.6rem, $height: 2.0rem, $weight:400);
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

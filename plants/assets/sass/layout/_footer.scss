@@ -1,0 +1,104 @@
+.footer {
+    padding: 41px 0 41px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include font($size: 2.0rem, $height: 5.0rem, $weight:400);
+    color: $color-black;
+
+}
+
+.footer-info {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-github {
+    color: $color-black;
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+.rs-text {
+    padding-left: 30px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials-item {
+    @extend %transition;
+}
+
+.instagram-link, .fb-link, .twitter-link, .pinterest-link {
+    @extend %transition;
+}
+
+
+
+.instagram-icon {
+    display: block;
+    background: url(../../assets/icons/instagram.svg);
+    width: 28px;
+    height: 28px;
+}
+
+.instagram-link:hover .instagram-icon {
+    background: url(../../assets/icons/instagram-hover.svg);
+}
+
+.fb-icon {
+    display: block;
+    background: url(../../assets/icons/fb.svg);
+    width: 17px;
+    height: 28px;
+}
+
+.fb-link:hover .fb-icon {
+    background: url(../../assets/icons/fb-hover.svg);
+}
+
+.twitter-icon{
+    display: block;
+    background: url(../../assets/icons/twitter.svg);
+    width: 28px;
+    height: 22px;
+}
+
+.twitter-link:hover .twitter-icon {
+    background: url(../../assets/icons/twitter-hover.svg);
+}
+
+.pinterest-icon{
+    display: block;
+    background: url(../../assets/icons/pinterest.svg);
+    width: 28px;
+    height: 28px;
+}
+
+.pinterest-link:hover .pinterest-icon {
+    background: url(../../assets/icons/pinterest-hover.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
