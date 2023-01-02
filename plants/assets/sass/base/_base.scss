@@ -24,9 +24,9 @@ h1 {
     //     @include font($size: 6.0rem, $weight:700);
     // }
 
-    // @include media-tablet {
-    //     @include font($size: 4.0rem, $weight:700);
-    // }
+    @include media-tablet {
+        @include font($size: 3.5rem, $height: 5.0rem, $weight:700);
+    }
 
     // @include media-mobile {
     //     display: none;

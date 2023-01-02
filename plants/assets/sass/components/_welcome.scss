@@ -1,16 +1,32 @@
 .welcome {
     background-color: $color-bg;
     padding-bottom: 126px;
+
+    @include media-tablet {
+        padding-top: 0px;
+        padding-bottom: 70px;
+    }
 }
 
 .welcome-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
+
+    @include media-tablet {
+        flex-direction: row-reverse;
+    }
+
+
 }
 
+
 .leafes {
+    width: 449px;
     position: relative;
+    @include media-tablet {
+        width: 280px;
+    }
 }
 
 .leaf-top {
@@ -18,20 +34,24 @@
     background-repeat: no-repeat;
     width: 285px;
     height: 224px;
-    position: absolute;
+    position: relative;
     top: -10px;
     left: 10px;
+
+    @include media-tablet {
+        background: url(../../assets/img/welcome/leaf-top-tablet.png);
+        background-repeat: no-repeat;
+        width: 186px;
+        height: 147px;
+        position: relative;
+        top: 30px;
+        left: 440px;
+        top: 31px;
+        left: 1px;
+    }
 }
 
-.leaf-top {
-    background: url(../../assets/img/welcome/leaf-top.png);
-    background-repeat: no-repeat;
-    width: 285px;
-    height: 284px;
-    position: absolute;
-    top: -10px;
-    left: 10px;
-}
+
 
 .leaf-left {
     background: url(../../assets/img/welcome/leaf-left.png);
@@ -41,6 +61,16 @@
     position: absolute;
     top: 191px;
     left: -12px;
+
+    @include media-tablet {
+        background: url(../../assets/img/welcome/leaf-left-tablet.png);
+        background-repeat: no-repeat;
+        width: 81px;
+        height: 81px;
+        position: absolute;
+        top: 155px;
+        left: -8px;
+    }
 }
 
 .leaf-bottom {
@@ -51,6 +81,16 @@
     position: absolute;
     top: 191px;
     left: 94px;
+
+    @include media-tablet {
+        background: url(../../assets/img/welcome/leaf-bottom-tablet.png);
+        background-repeat: no-repeat;
+        width: 145px;
+        height: 146px;
+        position: absolute;
+        top: 156px;
+        left: 56px;
+    }
 }
 
 .leaf-right-top {
@@ -61,6 +101,16 @@
     position: absolute;
     top: 102px;
     left: 246px;
+
+    @include media-tablet {
+        background: url(../../assets/img/welcome/leaf-right-top-tablet.png);
+        background-repeat: no-repeat;
+        width: 84px;
+        height: 78px;
+        position: absolute;
+        top: 100px;
+        left: 151px;
+    }
 }
 
 .leaf-right-bottom {
@@ -71,20 +121,44 @@
     position: absolute;
     top: 250px;
     left: 305px;
+
+    @include media-tablet {
+        background: url(../../assets/img/welcome/leaf-right-bottom-tablet.png);
+        background-repeat: no-repeat;
+        width: 95px;
+        height: 75px;
+        position: absolute;
+        top: 193px;
+        left: 189px;
+    }
 }
 
 .welcome-info {
     max-width: 558px;
     padding: 50px 0 0 0 ;
+    @include media-tablet {
+        padding: 40px 0 0 0;
+        max-width: 341px;
+    }
 }
+
+
 
 .welcome-info__text {
     margin-top: 42px;
     max-width: 535px;
+    @include media-tablet {
+        margin-top: 30px;
+        max-width: 341px;
+        @include font($size: 1.6rem, $height: 2.5rem, $weight:400);
+    }
 }
 
 .welcome-info__button {
     margin-top: 48px;
+    @include media-tablet {
+        margin-top: 36px;
+    }
 }
 
 

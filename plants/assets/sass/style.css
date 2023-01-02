@@ -421,6 +421,14 @@ h1 {
   font-style: normal;
   color: #717171;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
 
 h2 {
   font-size: 4rem;
@@ -595,15 +603,32 @@ h2 {
   background-color: #EDF2EC;
   padding-bottom: 126px;
 }
+@media (max-width: 800px) {
+  .welcome {
+    padding-top: 0px;
+    padding-bottom: 70px;
+  }
+}
 
 .welcome-wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .welcome-wrapper {
+    flex-direction: row-reverse;
+  }
+}
 
 .leafes {
+  width: 449px;
   position: relative;
+}
+@media (max-width: 800px) {
+  .leafes {
+    width: 280px;
+  }
 }
 
 .leaf-top {
@@ -611,19 +636,22 @@ h2 {
   background-repeat: no-repeat;
   width: 285px;
   height: 224px;
-  position: absolute;
+  position: relative;
   top: -10px;
   left: 10px;
 }
-
-.leaf-top {
-  background: url(../../assets/img/welcome/leaf-top.png);
-  background-repeat: no-repeat;
-  width: 285px;
-  height: 284px;
-  position: absolute;
-  top: -10px;
-  left: 10px;
+@media (max-width: 800px) {
+  .leaf-top {
+    background: url(../../assets/img/welcome/leaf-top-tablet.png);
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 147px;
+    position: relative;
+    top: 30px;
+    left: 440px;
+    top: 31px;
+    left: 1px;
+  }
 }
 
 .leaf-left {
@@ -635,6 +663,17 @@ h2 {
   top: 191px;
   left: -12px;
 }
+@media (max-width: 800px) {
+  .leaf-left {
+    background: url(../../assets/img/welcome/leaf-left-tablet.png);
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    top: 155px;
+    left: -8px;
+  }
+}
 
 .leaf-bottom {
   background: url(../../assets/img/welcome/leaf-bottom.png);
@@ -644,6 +683,17 @@ h2 {
   position: absolute;
   top: 191px;
   left: 94px;
+}
+@media (max-width: 800px) {
+  .leaf-bottom {
+    background: url(../../assets/img/welcome/leaf-bottom-tablet.png);
+    background-repeat: no-repeat;
+    width: 145px;
+    height: 146px;
+    position: absolute;
+    top: 156px;
+    left: 56px;
+  }
 }
 
 .leaf-right-top {
@@ -655,6 +705,17 @@ h2 {
   top: 102px;
   left: 246px;
 }
+@media (max-width: 800px) {
+  .leaf-right-top {
+    background: url(../../assets/img/welcome/leaf-right-top-tablet.png);
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 78px;
+    position: absolute;
+    top: 100px;
+    left: 151px;
+  }
+}
 
 .leaf-right-bottom {
   background: url(../../assets/img/welcome/leaf-right-bottom.png);
@@ -665,19 +726,51 @@ h2 {
   top: 250px;
   left: 305px;
 }
+@media (max-width: 800px) {
+  .leaf-right-bottom {
+    background: url(../../assets/img/welcome/leaf-right-bottom-tablet.png);
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 75px;
+    position: absolute;
+    top: 193px;
+    left: 189px;
+  }
+}
 
 .welcome-info {
   max-width: 558px;
   padding: 50px 0 0 0;
+}
+@media (max-width: 800px) {
+  .welcome-info {
+    padding: 40px 0 0 0;
+    max-width: 341px;
+  }
 }
 
 .welcome-info__text {
   margin-top: 42px;
   max-width: 535px;
 }
+@media (max-width: 800px) {
+  .welcome-info__text {
+    margin-top: 30px;
+    max-width: 341px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
 
 .welcome-info__button {
   margin-top: 48px;
+}
+@media (max-width: 800px) {
+  .welcome-info__button {
+    margin-top: 36px;
+  }
 }
 
 .about {
