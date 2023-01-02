@@ -1,11 +1,19 @@
 .service {
     background-color: $color-bg;
     padding: 35px 0 119px;
+    @include media-tablet {
+        padding: 60px 0 72px;
+    }
 }
 
 .service-info {
     display: flex;
     gap: 140px;
+
+    @include media-tablet {
+        flex-direction: column;
+        gap: 40px;
+    }
 
 }
 
@@ -17,7 +25,9 @@
     margin-top: 29px;
     display: flex;
     gap: 38px;
-
+    @include media-tablet {
+        margin-top: 0px;
+    }
 }
 
 
@@ -28,6 +38,11 @@
     flex-wrap: wrap;
     row-gap: 55px;
     column-gap: 117px;
+    @include media-tablet {
+        margin-top: 40px;
+        row-gap: 38px;
+        column-gap: 107px;
+    }
 }
 
 .service-item {
@@ -36,10 +51,19 @@
     border-radius: 20px;
     background-color: transparent;
     border: 1px solid $color-border;
+
+    @include media-tablet {
+        width: 280px;
+        height: 450px;
+    }
 }
 
 .service-item__picture > img {
     border-radius: 20px 20px 0 0;
+
+    @include media-tablet {
+        width: 280px;
+    }
 }
 
 .service-item__info__title {
@@ -54,6 +78,11 @@
     @include font($size: 1.6rem, $height: 2.0rem, $weight:400);
     text-align: center;
     margin-top: 10px;
+
+    @include media-tablet {
+        width: 201px;
+        margin: 10px auto 0;
+    }
 }
 
 

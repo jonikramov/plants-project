@@ -857,10 +857,21 @@ h2 {
   background-color: #EDF2EC;
   padding: 35px 0 119px;
 }
+@media (max-width: 800px) {
+  .service {
+    padding: 60px 0 72px;
+  }
+}
 
 .service-info {
   display: flex;
   gap: 140px;
+}
+@media (max-width: 800px) {
+  .service-info {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .service-title {
@@ -872,6 +883,11 @@ h2 {
   display: flex;
   gap: 38px;
 }
+@media (max-width: 800px) {
+  .service-buttons {
+    margin-top: 0px;
+  }
+}
 
 .service-items {
   margin-top: 87px;
@@ -881,6 +897,14 @@ h2 {
   -moz-column-gap: 117px;
        column-gap: 117px;
 }
+@media (max-width: 800px) {
+  .service-items {
+    margin-top: 40px;
+    row-gap: 38px;
+    -moz-column-gap: 107px;
+         column-gap: 107px;
+  }
+}
 
 .service-item {
   width: 329px;
@@ -889,9 +913,20 @@ h2 {
   background-color: transparent;
   border: 1px solid #E3E1D5;
 }
+@media (max-width: 800px) {
+  .service-item {
+    width: 280px;
+    height: 450px;
+  }
+}
 
 .service-item__picture > img {
   border-radius: 20px 20px 0 0;
+}
+@media (max-width: 800px) {
+  .service-item__picture > img {
+    width: 280px;
+  }
 }
 
 .service-item__info__title {
@@ -910,6 +945,12 @@ h2 {
   font-style: normal;
   text-align: center;
   margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .service-item__info__text {
+    width: 201px;
+    margin: 10px auto 0;
+  }
 }
 
 .prices {
