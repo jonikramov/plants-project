@@ -958,6 +958,12 @@ h2 {
   padding-top: 40px;
   padding-bottom: 132px;
 }
+@media (max-width: 800px) {
+  .prices {
+    padding-top: 40px;
+    padding-bottom: 161px;
+  }
+}
 
 .prices-wrapper {
   display: flex;
@@ -971,6 +977,15 @@ h2 {
   font-style: normal;
   color: #000000;
   margin-top: 5px;
+}
+@media (max-width: 800px) {
+  .prices-title {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 0 15px;
+  }
 }
 
 .prices-lists {
@@ -1025,6 +1040,12 @@ h2 {
   align-items: flex-end;
   gap: 40px;
 }
+@media (max-width: 800px) {
+  .prices-contact-us {
+    padding-top: 100px;
+    gap: 22px;
+  }
+}
 
 .prices-subtitle {
   font-size: 4rem;
@@ -1034,6 +1055,16 @@ h2 {
   color: #000000;
   width: 453px;
   text-align: right;
+}
+@media (max-width: 800px) {
+  .prices-subtitle {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    font-style: normal;
+    width: 296px;
+    height: 78px;
+  }
 }
 
 .prices-leafes {
@@ -1048,6 +1079,16 @@ h2 {
   top: -38px;
   right: 83px;
 }
+@media (max-width: 800px) {
+  .prices-leaf-top {
+    background: url(../../assets/img/prices/top-tablet.png);
+    width: 116px;
+    height: 98px;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+  }
+}
 
 .prices-leaf-left {
   background: url(../../assets/img/prices/left.jpg);
@@ -1057,6 +1098,17 @@ h2 {
   top: 113px;
   right: 181px;
   z-index: 1;
+}
+@media (max-width: 800px) {
+  .prices-leaf-left {
+    background: url(../../assets/img/prices/left-tablet.png);
+    width: 58px;
+    height: 62px;
+    position: absolute;
+    top: 88px;
+    right: 94px;
+    z-index: 1;
+  }
 }
 
 .prices-leaf-right {
@@ -1068,6 +1120,17 @@ h2 {
   left: 8px;
   z-index: 1;
 }
+@media (max-width: 800px) {
+  .prices-leaf-right {
+    background: url(../../assets/img/prices/right-tablet.png);
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    top: 51px;
+    left: -48px;
+    z-index: 1;
+  }
+}
 
 .prices-leaf-bottom {
   background: url(../../assets/img/prices/bottom.jpg);
@@ -1077,6 +1140,17 @@ h2 {
   position: absolute;
   top: 117px;
   right: -8px;
+}
+@media (max-width: 800px) {
+  .prices-leaf-bottom {
+    background: url(../../assets/img/prices/bottom-tablet.png);
+    background-repeat: no-repeat;
+    width: 207px;
+    height: 170px;
+    position: absolute;
+    top: 88px;
+    right: -98px;
+  }
 }
 
 .contacts {
