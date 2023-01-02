@@ -30,6 +30,10 @@
     padding: 50px 0 50px;
     background-color: $color-bg;
 
+    @include media-tablet {
+        padding: 35px 0 32px;
+    }
+
 }
 
 .header-wrapper {
@@ -41,6 +45,9 @@
 .nav-list {
     display: flex;
     gap: 44px;
+    @include media-tablet {
+        gap: 46px;
+    }
 
 }
 
@@ -49,6 +56,10 @@
     @extend %font-add;
     @include font($size: 1.6rem, $height: 5.0rem, $weight:400);
     @extend %transition;
+
+    // @include media-tablet {
+    //     @include font($size: 1.6rem, $height: 4.7rem, $weight:400);
+    // }
 
     &:hover {
         color: $color-green;

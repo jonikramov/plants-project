@@ -438,8 +438,17 @@ h2 {
   color: #E06733;
 }
 
+.logo {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .logo {
+    margin-top: 10px;
+  }
+}
+
 .logo-icon {
-  display: inline-block;
+  display: block;
   background: url(../../assets/icons/logo-text.svg);
   width: 81px;
   height: 22px;
@@ -450,10 +459,21 @@ h2 {
   margin: 0 auto;
   padding: 0 109px;
 }
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 50px;
+  }
+}
 
 .header {
   padding: 50px 0 50px;
   background-color: #EDF2EC;
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 35px 0 32px;
+  }
 }
 
 .header-wrapper {
@@ -464,6 +484,11 @@ h2 {
 .nav-list {
   display: flex;
   gap: 44px;
+}
+@media (max-width: 800px) {
+  .nav-list {
+    gap: 46px;
+  }
 }
 
 .nav-item-url {
