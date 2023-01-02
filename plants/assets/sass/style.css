@@ -529,6 +529,11 @@ h2 {
 .footer {
   padding: 41px 0 41px;
 }
+@media (max-width: 800px) {
+  .footer {
+    padding: 20px 0 29px;
+  }
+}
 
 .footer-wrapper {
   display: flex;
@@ -539,10 +544,20 @@ h2 {
   font-style: normal;
   color: #000000;
 }
+@media (max-width: 800px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+}
 
 .footer-info {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 800px) {
+  .footer-info {
+    margin: 0 auto;
+  }
 }
 
 .footer-github {
@@ -555,12 +570,25 @@ h2 {
 .rs-text {
   padding-left: 30px;
 }
+@media (max-width: 800px) {
+  .rs-text {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin-top: -11px;
+  }
+}
 
 .footer-socials {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .footer-socials {
+    margin: 13.5px 0 0 0;
+    padding: 0 0 0 0;
+  }
 }
 
 .instagram-icon {
