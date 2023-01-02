@@ -1157,16 +1157,35 @@ h2 {
   background-color: #EDF2EC;
   padding-top: 45px;
 }
+@media (max-width: 800px) {
+  .contacts {
+    padding-top: 40px;
+  }
+}
 
 .contacts-wrapper {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .contacts-wrapper {
+    flex-direction: column;
+  }
 }
 
 .contacts-picture {
   background: url(../../assets/img/contacts/woman.png);
   width: 400px;
   height: 497px;
+}
+@media (max-width: 800px) {
+  .contacts-picture {
+    order: 3;
+    background: url(../../assets/img/contacts/woman-tablet.png);
+    width: 200px;
+    height: 248px;
+    margin: 0 0 0 245px;
+  }
 }
 
 .contacts-title {
@@ -1176,6 +1195,12 @@ h2 {
   font-style: normal;
   margin-top: 15px;
   padding-left: 40px;
+}
+@media (max-width: 800px) {
+  .contacts-title {
+    padding: 0;
+    margin: 0 auto 100px;
+  }
 }
 
 .contacts-city {
@@ -1189,6 +1214,11 @@ h2 {
   padding-left: 20px;
   padding-right: 35px;
   margin-top: 103px;
+}
+@media (max-width: 800px) {
+  .contacts-city {
+    margin: 0 auto 250px;
+  }
 }
 
 .contacts-city__dropdown {
