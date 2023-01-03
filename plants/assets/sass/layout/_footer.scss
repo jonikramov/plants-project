@@ -4,6 +4,10 @@
     @include media-tablet {
         padding: 20px 0 29px;
     }
+
+    @include media-mobile {
+        padding: 7px 0 29px;
+    }
 }
 
 .footer-wrapper {
@@ -54,6 +58,11 @@
 
     @include media-tablet {
         margin: 13.5px 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    @include media-mobile {
+        margin: 3.5px 0 0 0;
         padding: 0 0 0 0;
     }
 }
