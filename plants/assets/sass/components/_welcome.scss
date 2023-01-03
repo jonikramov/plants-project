@@ -6,6 +6,11 @@
         padding-top: 0px;
         padding-bottom: 70px;
     }
+
+    @include media-mobile {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .welcome-wrapper {
@@ -24,8 +29,13 @@
 .leafes {
     width: 449px;
     position: relative;
+
     @include media-tablet {
         width: 280px;
+    }
+
+    @include media-mobile {
+        display: none;
     }
 }
 
@@ -136,9 +146,14 @@
 .welcome-info {
     max-width: 558px;
     padding: 50px 0 0 0 ;
+
     @include media-tablet {
         padding: 40px 0 0 0;
         max-width: 341px;
+    }
+
+    @include media-mobile {
+        padding: 0;
     }
 }
 
@@ -147,17 +162,27 @@
 .welcome-info__text {
     margin-top: 42px;
     max-width: 535px;
+
     @include media-tablet {
         margin-top: 30px;
         max-width: 341px;
         @include font($size: 1.6rem, $height: 2.5rem, $weight:400);
     }
+
+    @include media-mobile {
+        margin-top: 25px;
+    }
 }
 
 .welcome-info__button {
     margin-top: 48px;
+
     @include media-tablet {
         margin-top: 36px;
+    }
+
+    @include media-mobile {
+        margin-top: 23px;
     }
 }
 

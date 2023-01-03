@@ -396,6 +396,17 @@ p {
   background-color: #E06733;
   color: rgb(255, 255, 255);
 }
+@media (max-width: 600px) {
+  .button-add {
+    width: 100px;
+    height: 34px;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 12px;
+  }
+}
 
 html {
   font-size: 10px;
@@ -425,6 +436,14 @@ h1 {
   h1 {
     font-size: 3.5rem;
     line-height: 5rem;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     font-weight: 700;
     font-style: normal;
   }
@@ -481,6 +500,12 @@ h2 {
     padding: 0 50px;
   }
 }
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 380px;
+    padding: 0 25px;
+  }
+}
 
 .header {
   padding: 50px 0 50px;
@@ -489,6 +514,11 @@ h2 {
 @media (max-width: 800px) {
   .header {
     padding: 35px 0 32px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 25px 0 33.5px;
   }
 }
 
@@ -504,6 +534,11 @@ h2 {
 @media (max-width: 800px) {
   .nav-list {
     gap: 46px;
+  }
+}
+@media (max-width: 600px) {
+  .nav-list {
+    display: none;
   }
 }
 
@@ -524,6 +559,20 @@ h2 {
 
 .active-page {
   color: #E06733;
+}
+
+.burger-menu {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 5.5px;
+}
+
+.burger-line {
+  width: 40px;
+  height: 2px;
+  background-color: #717171;
 }
 
 .footer {
@@ -645,6 +694,12 @@ h2 {
     padding-bottom: 70px;
   }
 }
+@media (max-width: 600px) {
+  .welcome {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 
 .welcome-wrapper {
   position: relative;
@@ -664,6 +719,11 @@ h2 {
 @media (max-width: 800px) {
   .leafes {
     width: 280px;
+  }
+}
+@media (max-width: 600px) {
+  .leafes {
+    display: none;
   }
 }
 
@@ -784,6 +844,11 @@ h2 {
     max-width: 341px;
   }
 }
+@media (max-width: 600px) {
+  .welcome-info {
+    padding: 0;
+  }
+}
 
 .welcome-info__text {
   margin-top: 42px;
@@ -799,6 +864,11 @@ h2 {
     font-style: normal;
   }
 }
+@media (max-width: 600px) {
+  .welcome-info__text {
+    margin-top: 25px;
+  }
+}
 
 .welcome-info__button {
   margin-top: 48px;
@@ -806,6 +876,11 @@ h2 {
 @media (max-width: 800px) {
   .welcome-info__button {
     margin-top: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .welcome-info__button {
+    margin-top: 23px;
   }
 }
 
@@ -1173,11 +1248,11 @@ h2 {
   .prices-leaf-bottom {
     background: url(../../assets/img/prices/bottom-tablet.png);
     background-repeat: no-repeat;
-    width: 207px;
-    height: 170px;
+    width: 97px;
+    height: 104px;
     position: absolute;
     top: 88px;
-    right: -98px;
+    right: 12px;
   }
 }
 
