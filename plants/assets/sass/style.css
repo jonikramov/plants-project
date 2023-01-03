@@ -371,6 +371,17 @@ p {
   background-color: #E06733;
   color: rgb(255, 255, 255);
 }
+@media (max-width: 600px) {
+  .button-primary {
+    width: 121px;
+    height: 35px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 12px 7px;
+  }
+}
 
 .button-add {
   display: block;
@@ -404,7 +415,7 @@ p {
     line-height: 2rem;
     font-weight: 400;
     font-style: normal;
-    padding: 8px 12px;
+    padding: 6px 12px;
   }
 }
 
@@ -1000,6 +1011,11 @@ h2 {
     padding: 60px 0 72px;
   }
 }
+@media (max-width: 600px) {
+  .service {
+    padding: 30px 0 27px;
+  }
+}
 
 .service-info {
   display: flex;
@@ -1011,9 +1027,24 @@ h2 {
     gap: 40px;
   }
 }
+@media (max-width: 800px) {
+  .service-info {
+    gap: 37px;
+  }
+}
 
 .service-title {
   max-width: 306px;
+}
+@media (max-width: 600px) {
+  .service-title {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    font-weight: 400;
+    font-style: normal;
+    width: 189px;
+    height: 69px;
+  }
 }
 
 .service-buttons {
@@ -1024,6 +1055,9 @@ h2 {
 @media (max-width: 800px) {
   .service-buttons {
     margin-top: 0px;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    gap: 10px;
   }
 }
 
@@ -1041,6 +1075,12 @@ h2 {
     row-gap: 38px;
     -moz-column-gap: 107px;
          column-gap: 107px;
+  }
+}
+@media (max-width: 800px) {
+  .service-items {
+    justify-content: center;
+    gap: 34px;
   }
 }
 
