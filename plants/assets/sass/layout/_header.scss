@@ -1,34 +1,14 @@
-// .header {
-//     position: relative;
-//     z-index: 0;
-//     background: $color-header;
-//     padding: 25px 0 25px;
-//     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-
-//     @include media-mobile {
-//         box-shadow: none;
-//         background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
-//         padding: 45px 0 25px;
-//     }
-
-
-
-
-// }
-
-// .header__wrapper {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
-
-// .header__nav {
-//     margin-left: -30px;
-// }
-
 .header {
     padding: 50px 0 50px;
     background-color: $color-bg;
+
+    @include media-tablet {
+        padding: 35px 0 32px;
+    }
+
+    @include media-mobile {
+        padding: 25px 0 33.5px;
+    }
 
 }
 
@@ -42,6 +22,14 @@
     display: flex;
     gap: 44px;
 
+    @include media-tablet {
+        gap: 46px;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
+
 }
 
 .nav-item-url {
@@ -49,6 +37,10 @@
     @extend %font-add;
     @include font($size: 1.6rem, $height: 5.0rem, $weight:400);
     @extend %transition;
+
+    // @include media-tablet {
+    //     @include font($size: 1.6rem, $height: 4.7rem, $weight:400);
+    // }
 
     &:hover {
         color: $color-green;
@@ -64,15 +56,75 @@
     color: #E06733;
 }
 
+.burger-icon {
+    display: none;
 
+    @include media-mobile {
+        display: block;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 5.5px;
+    }
 
+}
 
+.burger-line {
+    width: 40px;
+    height: 2.0px;
+    background-color: #717171;
+}
 
+.burger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 190px;
+    height: 396px;
+    background-color: $color-bg;
+    background-color: blue;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    display: none;
+}
 
+.burger-close {
+    background: url(../../assets/icons/burger-close.svg);
+    width: 30px;
+    height: 30px;
+}
 
+.burger-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.burger-nav-item-url {
+    color: $color-links-nav;
+    @extend %font-add;
+    @include font($size: 1.6rem, $height: 5.0rem, $weight:400);
+    @extend %transition;
 
+    // @include media-tablet {
+    //     @include font($size: 1.6rem, $height: 4.7rem, $weight:400);
+    // }
 
+    &:hover {
+        color: $color-green;
+    }
+
+}
+
+.burger-nav-item {
+    cursor: pointer;
+
+}
 
 
 

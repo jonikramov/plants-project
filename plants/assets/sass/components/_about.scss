@@ -1,26 +1,76 @@
 .about {
     background-color: $color-light;
     padding: 82px 0 105px;
+
+    @include media-tablet {
+        padding: 40px 0 95px;
+    }
+
+    @include media-mobile {
+        padding: 30px 0 33px;
+    }
 }
 
 .about-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include media-dekstop {
+        align-items: center;
+    }
+
+
+    @include media-tablet {
+        flex-direction: column;
+    }
 }
 
 .about-info {
     max-width: 612px;
     padding-top: 68px;
+    @include media-tablet {
+        max-width: 668px;
+        padding-top: 0px;
+
+    }
 
 }
 
 .about-info__title {
     width: 463px;
+
+    @include media-tablet {
+        width: 423px;
+        height: 102px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @include media-mobile {
+        width: 288px;
+        height: 58px;
+        @include font($size: 2.5rem, $height: 3.3rem, $weight:400);
+    }
+
+
 }
 
 .about-info__text {
     margin-top: 40px;
     @include font($size: 2.0rem, $height: 3.0rem, $weight:400);
+
+    @include media-tablet {
+        margin-top: 40px;
+    }
+
+    @include media-mobile {
+        margin-top: 20px;
+        @include font($size: 1.5rem, $height: 2.5rem, $weight:400);
+        max-width: 330px;
+        height: 228px;
+    }
+
+
 }
 
 .about-picture {
@@ -28,6 +78,29 @@
     background-repeat: no-repeat;
     width: 464px;
     height: 479px;
+
+    @include media-dekstop {
+        background: url(../../assets/img/about/houseplant-tablet.jpg);
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 258px;
+    }
+
+    @include media-tablet {
+        background: url(../../assets/img/about/houseplant-tablet.jpg);
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 258px;
+        margin: 68px auto 0;
+    }
+
+    @include media-mobile {
+        background: url(../../assets/img/about/houseplant-mobile.jpg);
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 147px;
+        margin: 0px auto 0;
+    }
 }
 
 

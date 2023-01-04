@@ -20,17 +20,15 @@ h1 {
     @include font($size: 4.5rem, $height: 5.0rem, $weight:700);
     color: $color-brown;
 
-    // @include media-laptop {
-    //     @include font($size: 6.0rem, $weight:700);
-    // }
+    @include media-tablet {
+        @include font($size: 3.5rem, $height: 5.0rem, $weight:700);
+    }
 
-    // @include media-tablet {
-    //     @include font($size: 4.0rem, $weight:700);
-    // }
+    @include media-mobile {
+        @include font($size: 2.5rem, $height: 3.5rem, $weight:700);
+    }
 
-    // @include media-mobile {
-    //     display: none;
-    // }
+
 }
 
 h2 {
@@ -38,17 +36,9 @@ h2 {
     @include font ($size: 4.0rem, $height: 5.212rem);
     color: $color-green;
 
-    // @include media-laptop{
-    //     @include font ($size: 3.0rem);
-    // }
-
-    // @include media-tablet {
-    //     @include font ($size: 2.0rem);
-    // }
-
-    // @include media-mobile {
-    //     @include font ($size: 1.4rem);
-    // }
+    @include media-tablet {
+        @include font($size: 3.5rem, $height: 4.6rem, $weight:700);
+    }
 }
 
 // h3 {

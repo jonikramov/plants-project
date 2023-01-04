@@ -23,11 +23,32 @@
                     <li class="nav-item"><a class="nav-item-url" href="#contacts">Contacts</a></li>
                 </ul>
             </div>
+            <div class="burger-icon">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-close"></div>
+                <ul class="burger-nav-list">
+                    <li class="burger-nav-item"><a class="burger-nav-item-url active-page" href="#header">Home</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-item-url" href="#about">About us</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-item-url" href="#service">Service</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-item-url" href="#prices">Price</a></li>
+                    <li class="burger-nav-item"><a class="burger-nav-item-url" href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <section class="welcome" id="welcome">
             <div class="wrapper welcome-wrapper">
+                <div class="welcome-info">
+                    <h1>We grow <span class="color-green">plants</span> and give you oxygen</h1>
+                    <p class="welcome-info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <button class="button-add welcome-info__button">LEARN MORE</button>
+                </div>
                 <div class="leafes">
                     <div class="leaf-top"></div>
                     <div class="leaf-left"></div>
@@ -35,12 +56,6 @@
                     <div class="leaf-right-top"></div>
                     <div class="leaf-right-bottom"></div>
                 </div>
-                <div class="welcome-info">
-                    <h1>We grow <span class="color-green">plants</span> and give you oxygen</h1>
-                    <p class="welcome-info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <button class="button-add welcome-info__button">LEARN MORE</button>
-                </div>
-
 
             </div>
         </section>
@@ -65,7 +80,7 @@
                 <div class="service-info">
                     <h2 class="service-title">Service and our projects</h2>
                     <div class="service-buttons">
-                        <button class="button-primary">Gargens</button>
+                        <button class="button-primary">Gardens</button>
                         <button class="button-primary">Lawn</button>
                         <button class="button-primary">Planting</button>
                     </div>
@@ -74,7 +89,8 @@
 
                     <div class="service-item">
                         <picture class="service-item__picture">
-                            <img src="assets/img/service/1.jpg" alt="Garden care">
+                            <source media="(min-width:769px)" srcset="assets/img/service/1.jpg">
+                            <img src="assets/img/service/1-tablet.jpg" alt="Garden care">
                         </picture>
                         <div class="service-item__info">
                             <p class="service-item__info__title">Garden care</p>
@@ -84,7 +100,8 @@
 
                     <div class="service-item">
                         <picture class="service-item__picture">
-                            <img src="assets/img/service/2.jpg" alt="Planting">
+                            <source media="(min-width:769px)" srcset="assets/img/service/2.jpg">
+                            <img src="assets/img/service/2-tablet.jpg" alt="Planting">
                         </picture>
                         <div class="service-item__info">
                             <p class="service-item__info__title">Planting</p>
@@ -94,7 +111,8 @@
 
                     <div class="service-item">
                         <picture class="service-item__picture">
-                            <img src="assets/img/service/3.jpg" alt="Lawn care">
+                            <source media="(min-width:769px)" srcset="assets/img/service/3.jpg">
+                            <img src="assets/img/service/3-tablet.jpg" alt="Lawn care">
                         </picture>
                         <div class="service-item__info">
                             <p class="service-item__info__title">Lawn care</p>
@@ -104,7 +122,8 @@
 
                     <div class="service-item">
                         <picture class="service-item__picture">
-                            <img src="assets/img/service/4.jpg" alt="Planting">
+                            <source media="(min-width:769px)" srcset="assets/img/service/4.jpg">
+                            <img src="assets/img/service/4-tablet.jpg" alt="Planting">
                         </picture>
                         <div class="service-item__info">
                             <p class="service-item__info__title">Planting</p>
@@ -114,7 +133,8 @@
 
                     <div class="service-item">
                         <picture class="service-item__picture">
-                            <img src="assets/img/service/5.jpg" alt="Garden care">
+                            <source media="(min-width:769px)" srcset="assets/img/service/5.jpg">
+                            <img src="assets/img/service/5-tablet.jpg" alt="Garden care">
                         </picture>
                         <div class="service-item__info">
                             <p class="service-item__info__title">Garden care</p>
@@ -124,7 +144,8 @@
 
                     <div class="service-item">
                         <picture class="service-item__picture">
-                            <img src="assets/img/service/6.jpg" alt="Planting">
+                            <source media="(min-width:769px)" srcset="assets/img/service/6.jpg">
+                            <img src="assets/img/service/6-tablet.jpg" alt="Planting">
                         </picture>
                         <div class="service-item__info">
                             <p class="service-item__info__title">Planting</p>
@@ -218,5 +239,6 @@
             </ul>
         </div>
     </footer>
+    <script src=""></script>
 </body>
 </html>

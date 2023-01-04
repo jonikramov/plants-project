@@ -2,11 +2,27 @@
     background-color: $color-light;
     padding-top: 40px;
     padding-bottom: 132px;
+
+    @include media-tablet {
+        padding-top: 40px;
+        padding-bottom: 164px;
+    }
+
+    @include media-mobile {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
 }
 
 .prices-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include media-mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .prices-title {
@@ -14,6 +30,17 @@
     @include font($size: 4.0rem, $height: 4.841rem, $weight:700);
     color: $color-black;
     margin-top: 5px;
+
+    @include media-tablet {
+        @include font($size: 3.5rem, $height: 4.2rem, $weight:700);
+        margin: 0 0 0 15px;
+    }
+
+    @include media-mobile {
+        @include font($size: 2.5rem, $height: 3.0rem, $weight:700);
+        margin: 0 0 0px;
+        text-align: center;
+    }
 }
 
 .prices-lists {
@@ -26,6 +53,22 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include media-tablet {
+        margin-top: 55px;
+    }
+
+    @include media-mobile {
+        margin-top: 37px;
+        width: 224px;
+        height: 235px;
+        border: 1px solid $color-border;
+        border-radius: 20px;
+        padding: 29px 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
 }
 
 .prices-list {
@@ -37,12 +80,22 @@
     display: flex;
     justify-content: space-between;
 
+    @include media-mobile {
+        width: 180px;
+        height: 50px;
+        padding: 16px 40px 15px 30px;
+    }
+
 }
 
 .prices-list__title {
     @extend %font-primary;
     @include font($size: 2.0rem, $height: 2.0rem, $weight:700);
     color: $color-black;
+
+    @include media-mobile {
+        @include font($size: 1.5rem, $height: 2.0rem, $weight:700);
+    }
 }
 
 .prices-list__dropdown {
@@ -66,6 +119,17 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 40px;
+
+    @include media-tablet {
+        padding-top: 97px;
+        gap: 22px;
+    }
+
+    @include media-mobile {
+        padding-top: 20px;
+        gap: 11px;
+
+    }
 }
 
 .prices-subtitle {
@@ -74,10 +138,34 @@
     color: $color-black;
     width: 453px;
     text-align: right;
+
+    @include media-tablet {
+        @include font($size: 2.5rem, $height: 3.5rem, $weight:700);
+        width: 296px;
+        height: 78px;
+    }
+
+    @include media-mobile {
+        @include font($size: 2.0rem, $height: 3.5rem, $weight:700);
+        width: 240px;
+        height: 78px;
+        text-align: center;
+    }
 }
 
 .prices-leafes {
     position: relative;
+    @include media-mobile {
+        display: none;
+    }
+
+    @include media-mobile {
+        @include font($size: 2.0rem, $height: 3.5rem, $weight:700);
+        width: 240px;
+        height: 78px;
+        text-align: center;
+    }
+
 }
 
 .prices-leaf-top {
@@ -87,6 +175,16 @@
     position: absolute;
     top: -38px;
     right: 83px;
+
+    @include media-tablet {
+        background: url(../../assets/img/prices/top-tablet.png);
+        width: 116px;
+        height: 98px;
+        position: absolute;
+        top: 5px;
+        right: 40px;
+
+    }
 }
 
 .prices-leaf-left {
@@ -97,6 +195,17 @@
     top: 113px;
     right: 181px;
     z-index: 1;
+
+    @include media-tablet {
+        background: url(../../assets/img/prices/left-tablet.png);
+        width: 58px;
+        height: 62px;
+        position: absolute;
+        top: 88px;
+        right: 94px;
+        z-index: 1;
+
+    }
 }
 
 .prices-leaf-right {
@@ -107,6 +216,17 @@
     top: 47px;
     left: 8px;
     z-index: 1;
+
+    @include media-tablet {
+        background: url(../../assets/img/prices/right-tablet.png);
+        width: 59px;
+        height: 59px;
+        position: absolute;
+        top: 51px;
+        left: -48px;
+        z-index: 1;
+
+    }
 }
 
 .prices-leaf-bottom {
@@ -117,8 +237,24 @@
     position: absolute;
     top: 117px;
     right: -8px;
+
+    @include media-tablet {
+        background: url(../../assets/img/prices/bottom-tablet.png);
+        background-repeat: no-repeat;
+        width: 97px;
+        height: 104px;
+        position: absolute;
+        top: 88px;
+        right: 12px;
+
+    }
 }
 
+.prices-button {
+    @include media-mobile {
+        margin: 0 auto;
+    }
+}
 
 
 
