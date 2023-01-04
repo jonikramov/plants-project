@@ -3,7 +3,7 @@
     padding-top: 45px;
 
     @include media-tablet {
-        padding-top: 40px;
+        padding-top: 39px;
     }
 
     @include media-mobile {
@@ -26,6 +26,13 @@
     background: url(../../assets/img/contacts/woman.png);
     width: 400px;
     height: 497px;
+
+    @include media-laptop-and-tablet {
+        background: url(../../assets/img/contacts/woman-resize.png);
+        width: 270px;
+        height: 335px;
+
+    }
 
     @include media-tablet {
         order: 3;
@@ -50,6 +57,7 @@
     @include font($size: 4.0rem, $height: 5.2rem, $weight:700);
     margin-top: 15px;
     padding-left: 40px;
+    text-align: center;
 
     @include media-tablet {
         padding: 0;
@@ -74,6 +82,8 @@
     padding-right: 35px;
     margin-top: 103px;
 
+
+
     @include media-tablet {
         margin: 0 auto 250px;
     }
@@ -83,6 +93,11 @@
         height: 50px;
         padding-right: 20px;
         margin: 0 auto 133px;
+    }
+
+    @include media-mobile-mini {
+        max-width: 250px;
+
     }
 }
 

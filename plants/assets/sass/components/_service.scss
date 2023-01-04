@@ -20,8 +20,8 @@
         gap: 40px;
     }
 
-    @include media-tablet {
-        gap: 37px;
+    @include media-mobile {
+        gap: 35px;
     }
 
 }
@@ -40,7 +40,15 @@
     margin-top: 29px;
     display: flex;
     gap: 38px;
+
     @include media-tablet {
+        margin-top: 0px;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        gap: 38px;
+    }
+
+    @include media-mobile {
         margin-top: 0px;
         flex-wrap: wrap;
         margin-top: 0px;
@@ -56,6 +64,7 @@
     flex-wrap: wrap;
     row-gap: 55px;
     column-gap: 117px;
+    justify-content: center;
 
     @include media-tablet {
         margin-top: 40px;
@@ -63,7 +72,7 @@
         column-gap: 107px;
     }
 
-    @include media-tablet {
+    @include media-mobile {
         justify-content: center;
         gap: 34px;
     }
