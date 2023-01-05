@@ -335,8 +335,12 @@ p {
 }
 
 /*  Colors  */ /*  @mixin media-dekstop - @include media-dekstop */ /*  %transition -   @extend %transition;  */
-.instagram-link, .fb-link, .twitter-link, .pinterest-link, .footer-socials-item, .burger-nav-item-url, .nav-item-url, .button-add, .button-primary {
+.instagram-link, .fb-link, .twitter-link, .pinterest-link, .footer-socials-item, .burger-nav-item-url, .burger-close, .nav-item-url, .button-add, .button-primary {
   transition: all 0.3s ease-out;
+}
+
+.burger-menu {
+  transition: all 0.5s ease-out;
 }
 
 .prices-subtitle, .prices-list__title, .prices-title, .service-item__info__text, .service-item__info__title, body {
@@ -476,8 +480,30 @@ h2 {
   }
 }
 
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay-active {
+  display: block;
+}
+
 .color-green {
   color: #499A18;
+}
+
+.color-black {
+  color: #000000;
 }
 
 .color-orange {
@@ -583,7 +609,11 @@ h2 {
     flex-direction: column;
     gap: 8px;
     padding-top: 5.5px;
+    cursor: pointer;
   }
+}
+.burger-icon:hover .burger-line {
+  background-color: #E06733;
 }
 
 .burger-line {
@@ -594,25 +624,31 @@ h2 {
 
 .burger-menu {
   position: absolute;
-  top: 0;
+  top: -500px;
   right: 0;
   width: 190px;
   height: 396px;
-  background-color: #EDF2EC;
-  background-color: blue;
+  background-color: #E06733;
   display: flex;
   gap: 20px;
   flex-direction: column;
   border-radius: 10px;
   padding: 20px;
-  z-index: 1;
-  display: none;
+  z-index: 4;
+}
+
+.burger-menu-active {
+  top: 0px;
 }
 
 .burger-close {
   background: url(../../assets/icons/burger-close.svg);
   width: 30px;
   height: 30px;
+  cursor: pointer;
+}
+.burger-close:hover {
+  background: url(../../assets/icons/burger-close-hover.svg);
 }
 
 .burger-nav-list {
@@ -622,18 +658,22 @@ h2 {
 }
 
 .burger-nav-item-url {
-  color: #010201;
+  color: rgb(255, 255, 255);
   font-size: 1.6rem;
   line-height: 5rem;
   font-weight: 400;
   font-style: normal;
 }
 .burger-nav-item-url:hover {
-  color: #499A18;
+  color: #000000;
 }
 
 .burger-nav-item {
   cursor: pointer;
+}
+
+.active-page-burger {
+  color: #000000;
 }
 
 .footer {
