@@ -567,15 +567,18 @@ h2 {
 .nav-list {
   display: flex;
   gap: 44px;
+  margin-top: -7px;
 }
 @media (max-width: 1150px) {
   .nav-list {
     gap: 46px;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
   .nav-list {
     display: none;
+    margin: 0;
   }
 }
 
@@ -674,6 +677,10 @@ h2 {
 
 .active-page-burger {
   color: #000000;
+}
+
+.nav {
+  padding-top: -6px;
 }
 
 .footer {
@@ -798,7 +805,7 @@ h2 {
 
 .welcome {
   background-color: #EDF2EC;
-  padding-bottom: 126px;
+  padding-bottom: 95px;
 }
 @media (max-width: 1150px) {
   .welcome {
@@ -846,7 +853,7 @@ h2 {
   width: 285px;
   height: 224px;
   position: relative;
-  top: -10px;
+  top: 44px;
   left: 10px;
 }
 @media (max-width: 1350px) {
@@ -875,8 +882,8 @@ h2 {
   width: 119px;
   height: 118px;
   position: absolute;
-  top: 191px;
-  left: -12px;
+  top: 244px;
+  left: -10px;
 }
 @media (max-width: 1350px) {
   .leaf-left {
@@ -901,7 +908,7 @@ h2 {
   width: 223px;
   height: 224px;
   position: absolute;
-  top: 191px;
+  top: 244px;
   left: 94px;
 }
 @media (max-width: 1350px) {
@@ -928,8 +935,8 @@ h2 {
   width: 223px;
   height: 224px;
   position: absolute;
-  top: 102px;
-  left: 246px;
+  top: 154px;
+  left: 247px;
 }
 @media (max-width: 1350px) {
   .leaf-right-top {
@@ -954,7 +961,7 @@ h2 {
   width: 147px;
   height: 114px;
   position: absolute;
-  top: 250px;
+  top: 302px;
   left: 305px;
 }
 @media (max-width: 1350px) {
@@ -976,7 +983,8 @@ h2 {
 
 .welcome-info {
   max-width: 558px;
-  padding: 50px 0 0 0;
+  padding: 89px 0 0 0;
+  padding-left: 8px;
 }
 @media (max-width: 1150px) {
   .welcome-info {
@@ -1026,7 +1034,7 @@ h2 {
 
 .about {
   background-color: rgb(255, 255, 255);
-  padding: 82px 0 105px;
+  padding: 92px 0 95px;
 }
 @media (max-width: 1150px) {
   .about {
@@ -1146,7 +1154,7 @@ h2 {
 
 .service {
   background-color: #EDF2EC;
-  padding: 35px 0 119px;
+  padding: 40px 0 122px;
 }
 @media (max-width: 1150px) {
   .service {
@@ -1212,7 +1220,7 @@ h2 {
 }
 
 .service-items {
-  margin-top: 87px;
+  margin-top: 79px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 55px;
@@ -1284,8 +1292,8 @@ h2 {
 
 .prices {
   background-color: rgb(255, 255, 255);
-  padding-top: 40px;
-  padding-bottom: 132px;
+  padding-top: 39px;
+  padding-bottom: 128px;
 }
 @media (max-width: 1150px) {
   .prices {
@@ -1318,7 +1326,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   color: #000000;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 @media (max-width: 1150px) {
   .prices-title {
@@ -1490,12 +1498,12 @@ h2 {
 }
 
 .prices-leaf-top {
-  background: url(../../assets/img/prices/top.jpg);
-  width: 207px;
-  height: 170px;
+  background: url(../../assets/img/prices/top-tablet.png);
+  width: 116px;
+  height: 98px;
   position: absolute;
-  top: -38px;
-  right: 83px;
+  top: -6px;
+  right: 40px;
 }
 @media (max-width: 1150px) {
   .prices-leaf-top {
@@ -1509,12 +1517,12 @@ h2 {
 }
 
 .prices-leaf-left {
-  background: url(../../assets/img/prices/left.jpg);
-  width: 93px;
-  height: 95px;
+  background: url(../../assets/img/prices/left-tablet.png);
+  width: 58px;
+  height: 62px;
   position: absolute;
-  top: 113px;
-  right: 181px;
+  top: 75px;
+  right: 93px;
   z-index: 1;
 }
 @media (max-width: 1150px) {
@@ -1530,11 +1538,11 @@ h2 {
 }
 
 .prices-leaf-right {
-  background: url(../../assets/img/prices/right.jpg);
-  width: 95px;
-  height: 92px;
+  background: url(../../assets/img/prices/right-tablet.png);
+  width: 59px;
+  height: 59px;
   position: relative;
-  top: 47px;
+  top: 40px;
   left: 8px;
   z-index: 1;
 }
@@ -1551,13 +1559,13 @@ h2 {
 }
 
 .prices-leaf-bottom {
-  background: url(../../assets/img/prices/bottom.jpg);
+  background: url(../../assets/img/prices/bottom-tablet.png);
   background-repeat: no-repeat;
-  width: 207px;
-  height: 170px;
+  width: 97px;
+  height: 104px;
   position: absolute;
-  top: 117px;
-  right: -8px;
+  top: 77px;
+  right: 12px;
 }
 @media (max-width: 1150px) {
   .prices-leaf-bottom {
@@ -1579,7 +1587,7 @@ h2 {
 
 .contacts {
   background-color: #EDF2EC;
-  padding-top: 45px;
+  padding-top: 53px;
 }
 @media (max-width: 1150px) {
   .contacts {
@@ -1638,7 +1646,7 @@ h2 {
   line-height: 5.2rem;
   font-weight: 700;
   font-style: normal;
-  margin-top: 15px;
+  margin-top: 7px;
   padding-left: 40px;
   text-align: center;
 }
@@ -1668,7 +1676,7 @@ h2 {
   align-items: center;
   padding-left: 20px;
   padding-right: 35px;
-  margin-top: 103px;
+  margin-top: 95px;
 }
 @media (max-width: 1150px) {
   .contacts-city {

@@ -1,7 +1,7 @@
 .prices {
     background-color: $color-light;
-    padding-top: 40px;
-    padding-bottom: 132px;
+    padding-top: 39px;
+    padding-bottom: 128px;
 
     @include media-tablet {
         padding-top: 40px;
@@ -29,7 +29,7 @@
     @extend %font-primary;
     @include font($size: 4.0rem, $height: 4.841rem, $weight:700);
     color: $color-black;
-    margin-top: 5px;
+    margin-top: 0px;
 
     @include media-tablet {
         @include font($size: 3.5rem, $height: 4.2rem, $weight:700);
@@ -169,12 +169,12 @@
 }
 
 .prices-leaf-top {
-    background: url(../../assets/img/prices/top.jpg);
-    width: 207px;
-    height: 170px;
+    background: url(../../assets/img/prices/top-tablet.png);
+    width: 116px;
+    height: 98px;
     position: absolute;
-    top: -38px;
-    right: 83px;
+    top: -6px;
+    right: 40px;
 
     @include media-tablet {
         background: url(../../assets/img/prices/top-tablet.png);
@@ -188,12 +188,12 @@
 }
 
 .prices-leaf-left {
-    background: url(../../assets/img/prices/left.jpg);
-    width: 93px;
-    height: 95px;
+    background: url(../../assets/img/prices/left-tablet.png);
+    width: 58px;
+    height: 62px;
     position: absolute;
-    top: 113px;
-    right: 181px;
+    top: 75px;
+    right: 93px;
     z-index: 1;
 
     @include media-tablet {
@@ -209,11 +209,11 @@
 }
 
 .prices-leaf-right {
-    background: url(../../assets/img/prices/right.jpg);
-    width: 95px;
-    height: 92px;
+    background: url(../../assets/img/prices/right-tablet.png);
+    width: 59px;
+    height: 59px;
     position: relative;
-    top: 47px;
+    top: 40px;
     left: 8px;
     z-index: 1;
 
@@ -230,13 +230,13 @@
 }
 
 .prices-leaf-bottom {
-    background: url(../../assets/img/prices/bottom.jpg);
+    background: url(../../assets/img/prices/bottom-tablet.png);
     background-repeat: no-repeat;
-    width: 207px;
-    height: 170px;
+    width: 97px;
+    height: 104px;
     position: absolute;
-    top: 117px;
-    right: -8px;
+    top: 77px;
+    right: 12px;
 
     @include media-tablet {
         background: url(../../assets/img/prices/bottom-tablet.png);

@@ -1,6 +1,6 @@
 .contacts {
     background-color: $color-bg;
-    padding-top: 45px;
+    padding-top: 53px;
 
     @include media-tablet {
         padding-top: 39px;
@@ -55,7 +55,7 @@
 .contacts-title {
     @extend %font-add;
     @include font($size: 4.0rem, $height: 5.2rem, $weight:700);
-    margin-top: 15px;
+    margin-top: 7px;
     padding-left: 40px;
     text-align: center;
 
@@ -80,7 +80,7 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 35px;
-    margin-top: 103px;
+    margin-top: 95px;
 
 
 
