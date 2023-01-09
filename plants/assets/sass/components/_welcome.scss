@@ -1,6 +1,6 @@
 .welcome {
     background-color: $color-bg;
-    padding-bottom: 126px;
+    padding-bottom: 95px;
 
     @include media-tablet {
         padding-top: 0px;
@@ -46,7 +46,7 @@
     width: 285px;
     height: 224px;
     position: relative;
-    top: -10px;
+    top: 44px;
     left: 10px;
 
     @include media-dekstop {
@@ -75,8 +75,8 @@
     width: 119px;
     height: 118px;
     position: absolute;
-    top: 191px;
-    left: -12px;
+    top: 244px;
+    left: -10px;
 
     @include media-dekstop {
         background: url(../../assets/img/welcome/leaf-left-tablet.png);
@@ -101,8 +101,9 @@
     width: 223px;
     height: 224px;
     position: absolute;
-    top: 191px;
+    top: 244px;
     left: 94px;
+
 
     @include media-dekstop {
         background: url(../../assets/img/welcome/leaf-bottom-tablet.png);
@@ -126,8 +127,8 @@
     width: 223px;
     height: 224px;
     position: absolute;
-    top: 102px;
-    left: 246px;
+    top: 154px;
+    left: 247px;
 
     @include media-dekstop {
         background: url(../../assets/img/welcome/leaf-right-top-tablet.png);
@@ -150,7 +151,7 @@
     width: 147px;
     height: 114px;
     position: absolute;
-    top: 250px;
+    top: 302px;
     left: 305px;
 
     @include media-dekstop {
@@ -170,7 +171,8 @@
 
 .welcome-info {
     max-width: 558px;
-    padding: 50px 0 0 0;
+    padding: 89px 0 0 0;
+    padding-left: 8px;
 
     @include media-tablet {
         padding: 40px 0 0 0;

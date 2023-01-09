@@ -21,13 +21,16 @@
 .nav-list {
     display: flex;
     gap: 44px;
+    margin-top: -7px;
 
     @include media-tablet {
         gap: 46px;
+        margin: 0;
     }
 
     @include media-mobile {
         display: none;
+        margin: 0;
     }
 
 }
@@ -139,5 +142,7 @@
 }
 
 
-
+.nav {
+    padding-top: -6px;
+}
 

@@ -1,6 +1,6 @@
 .service {
     background-color: $color-bg;
-    padding: 35px 0 119px;
+    padding: 40px 0 122px;
 
     @include media-tablet {
         padding: 60px 0 72px;
@@ -59,7 +59,7 @@
 
 
 .service-items {
-    margin-top: 87px;
+    margin-top: 79px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 55px;
