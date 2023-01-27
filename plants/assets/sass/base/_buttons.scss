@@ -55,3 +55,14 @@
     }
 
 }
+
+
+.selected-button {
+    background-color: $color-orange;
+    color: $color-light;
+}
+
+.removed-button {
+    color: $color-orange;
+    background: transparent;
+}

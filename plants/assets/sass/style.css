@@ -423,6 +423,16 @@ p {
   }
 }
 
+.selected-button {
+  background-color: #E06733;
+  color: rgb(255, 255, 255);
+}
+
+.removed-button {
+  color: #E06733;
+  background: transparent;
+}
+
 html {
   font-size: 10px;
   background-color: #e5e5e5;
@@ -508,6 +518,14 @@ h2 {
 
 .color-orange {
   color: #E06733;
+}
+
+.color-transparent {
+  background-color: transparent;
+}
+
+.blur {
+  filter: blur(4px);
 }
 
 .logo {
