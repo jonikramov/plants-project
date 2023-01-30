@@ -2,6 +2,7 @@ window.onload = function(){
     console.log("Hello World");
 
     addButtonsClickHandler();
+
 }
 
 const burgerIcon = document.querySelector('.burger-icon');
@@ -32,84 +33,99 @@ burgerMenuItems.addEventListener('click', () => {
 } )
 
 
-const serviceItems = document.querySelector('.service-items')
 
-
-const addButtonsClickHandler = () => {
-    const serviceButtons = document.querySelector('.service-buttons').addEventListener('click', (e) =>  {
-    console.log(e);
-    if (e.target.classList.contains('button-primary')) {
-        let clickedButton = e.target;
-        removeSelectedButtons();
-        selectClickedButton(clickedButton);
-    }
-    })
-};
-
-
-const removeSelectedButtons = () => {
-    let buttons = document.querySelectorAll('.service-buttons .button-primary');
-    console.log(buttons)
-    buttons.forEach(button => {
-        button.classList.remove('selected-button')
-        button.classList.add('removed-button')
-    })
-}
-
-const selectClickedButton = (clickedButton) => {
-    clickedButton.classList.add('selected-button')
-    clickedButton.classList.remove('removed-button')
-}
-
-
-
-
-
-
-
-
-
-// const gardenButton = document.querySelector('.garden-button');
-// const plantingButton = document.querySelector('.planting-button');
-// const lawnCareButton = document.querySelector('.lawn-button');
-
-
-// const gardenCare = document.querySelectorAll('.garden-care');
-// const planting = document.querySelectorAll('.planting');
-// const lawnCare = document.querySelectorAll('.lawn-care');
-
-
-// function addBlur(section) {
-//     for (let i=0; i < section.length; i++) {
-//         section[i].classList.add('blur');
+// const addButtonsClickHandler = () => {
+//     const serviceButtons = document.querySelector('.service-buttons').addEventListener('click', (e) =>  {
+//     // console.log(e);
+//     if (e.target.classList.contains('service-button')) {
+//         let clickedButton = e.target;
+//         console.log(clickedButton);
+//         removeSelectedButtons();
+//         selectClickedButton(clickedButton);
 //     }
+//     })
+// };
+
+
+
+// const removeSelectedButtons = () => {
+//     let buttons = document.querySelectorAll('.service-buttons .button-primary');
+//     buttons.forEach(button => {
+//         button.classList.remove('selected-button')
+//         button.classList.add('removed-button')
+//     })
 // }
 
-// function removeBlur() {
-//     for (let i=0; i < section.length; i++) {
-//         section[i].classList.remove('blur');
-//     }
+// const selectClickedButton = (clickedButton) => {
+//     clickedButton.classList.add('selected-button')
+//     clickedButton.classList.remove('removed-button')
 // }
 
 
 
-// gardenButton.addEventListener('click', () => {
-//     addBlur(planting);
-//     addBlur(lawnCare);
-//     removeBlur(gardenCare);
-// } )
 
-// plantingButton.addEventListener('click', () => {
-//     addBlur(gardenCare);
-//     addBlur(lawnCare);
-//     removeBlur(planting);
-// } )
+// const removeBlurEffect = () => {
+//     const serviceItems = document.querySelectorAll('.service-items .service-item')
+//     serviceItems.forEach(serviceItem => {
+//         serviceItem.classList.remove('add-blur')
+//         serviceItem.classList.add('remove-blur')
+//     })
+// };
 
-// lawnCareButton.addEventListener('click', () => {
-//     addBlur(planting);
-//     addBlur(gardenCare);
-//     removeBlur(lawnCare);
-// } )
+// const addBlurEffect = () => {
+//     const serviceItems = document.querySelectorAll('.service-items .service-item')
+//     for (i=0; i<serviceItems.length; i++) {
+//         if (!serviceItems[i].classList.contains('garden-care')) {
+//             serviceItems[i].classList.add('add-blur')
+//             console.log(serviceItems[i])
+//         } else {
+//             serviceItems[i].classList.remove('add-remove')
+//             console.log(serviceItems[i])
+//         }
+//     }
+
+// }
+
+
+
+// const serviceItems = document.querySelectorAll('.service-items .service-item')
+// console.log(serviceItems)
+
+
+// const serviceItems = document.querySelectorAll('.service-items .service-item')
+
+
+
+
+
+// console.log(serviceButtons)
+
+// const addButtonsClickHandler = () => {
+//     const serviceButtons = document.querySelector('.service-buttons').addEventListener('click', (e) =>  {
+//     console.log(e);
+//     if (e.target.classList.contains('garden-button')) {
+//         let clickedButton = e.target;
+//         // removeSelectedButtons();
+//         // selectClickedButton(clickedButton);
+
+
+//     }
+//     })
+// };
+
+
+
+
+
+const serviceButtons = document.querySelector('.service-buttons .button-primary')
+
+console.log(serviceButtons)
+
+serviceButtons.addEventListener('click', (e) => {
+
+} )
+
+
 
 
 
