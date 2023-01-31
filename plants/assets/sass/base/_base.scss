@@ -111,5 +111,14 @@ h2 {
     color: $color-orange;
 }
 
+.color-transparent {
+    background-color: transparent;
+}
 
+.remove-blur {
+    filter: blur(0);
+}
 
+.add-blur {
+    filter: blur(4px);
+}
