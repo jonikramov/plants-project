@@ -524,12 +524,12 @@ h2 {
   background-color: transparent;
 }
 
-.add-blur {
-  filter: blur(4px);
-}
-
 .remove-blur {
   filter: blur(0);
+}
+
+.add-blur {
+  filter: blur(4px);
 }
 
 .logo {

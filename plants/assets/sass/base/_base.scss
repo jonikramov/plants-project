@@ -115,11 +115,10 @@ h2 {
     background-color: transparent;
 }
 
+.remove-blur {
+    filter: blur(0);
+}
 
 .add-blur {
     filter: blur(4px);
-}
-
-.remove-blur {
-    filter: blur(0);
 }
