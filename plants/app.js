@@ -31,175 +31,59 @@ burgerMenuItems.addEventListener('click', () => {
 
 
 
-// const addButtonsClickHandler = () => {
-//     const serviceButtons = document.querySelector('.service-buttons').addEventListener('click', (e) =>  {
-//     // console.log(e);
-//     if (e.target.classList.contains('service-button')) {
-//         let clickedButton = e.target;
-//         console.log(clickedButton);
-//         removeSelectedButtons();
-//         selectClickedButton(clickedButton);
-//     }
-//     })
-// };
-
-
-
-// const removeSelectedButtons = () => {
-//     let buttons = document.querySelectorAll('.service-buttons .button-primary');
-//     buttons.forEach(button => {
-//         button.classList.remove('selected-button')
-//         button.classList.add('removed-button')
-//     })
-// }
-
-// const selectClickedButton = (clickedButton) => {
-//     clickedButton.classList.add('selected-button')
-//     clickedButton.classList.remove('removed-button')
-// }
-
-
-
-
-// const removeBlurEffect = () => {
-//     const serviceItems = document.querySelectorAll('.service-items .service-item')
-//     serviceItems.forEach(serviceItem => {
-//         serviceItem.classList.remove('add-blur')
-//         serviceItem.classList.add('remove-blur')
-//     })
-// };
-
-// const addBlurEffect = () => {
-//     const serviceItems = document.querySelectorAll('.service-items .service-item')
-//     for (i=0; i<serviceItems.length; i++) {
-//         if (!serviceItems[i].classList.contains('garden-care')) {
-//             serviceItems[i].classList.add('add-blur')
-//             console.log(serviceItems[i])
-//         } else {
-//             serviceItems[i].classList.remove('add-remove')
-//             console.log(serviceItems[i])
-//         }
-//     }
-
-// }
-
-
-
-// const serviceItems = document.querySelectorAll('.service-items .service-item')
-// console.log(serviceItems)
-
-
-// const serviceItems = document.querySelectorAll('.service-items .service-item')
-
-
-
-
-
-// console.log(serviceButtons)
-
-// const addButtonsClickHandler = () => {
-//     const serviceButtons = document.querySelector('.service-buttons').addEventListener('click', (e) =>  {
-//     console.log(e);
-//     if (e.target.classList.contains('garden-button')) {
-//         let clickedButton = e.target;
-//         // removeSelectedButtons();
-//         // selectClickedButton(clickedButton);
-
-
-//     }
-//     })
-// };
-
-
-
-
-
-
-
-
-
 /* SERVICE SECTION */
 
-const gardenButton = document.querySelector('.garden-button');
-const lawnButton = document.querySelector('.lawn-button');
-const plantingButton = document.querySelector('.planting-button');
+const serviceButtons = document.querySelector('.service-buttons')
+const serviceItems = document.querySelectorAll('.service-item')
 
+serviceButtons.addEventListener('click', e => {
 
-gardenButton.addEventListener("click", () =>{
-
-    const serviceButtons = document.querySelectorAll('.service-buttons .button-primary')
-
-    for (i=0; i < serviceButtons.length; i++) {
-        if (serviceButtons[i].classList.contains('selected-button')) {
-            serviceButtons[i].classList.remove('selected-button')
-        }
+    if (e.target.classList.contains('service-buttons button-primary')) {
+        e.target.classList.add('selected-button')
     }
 
-    serviceButtons[0].classList.add('selected-button');
+    let countButton = document.getElementsByClassName('button-primary selected-button').length
 
-    const serviceItens = document.querySelectorAll('.service-items .service-item')
-    for (i=0; i < serviceItens.length; i++) {
-        if (serviceItens[i].classList.contains('add-blur')) {
-            serviceItens[i].classList.remove('add-blur')
-        }
+
+    if (countButton === 2 && !e.target.classList.contains('selected-button')) {
+        return
     }
-    serviceItens[1].classList.add('add-blur');
-    serviceItens[2].classList.add('add-blur');
-    serviceItens[3].classList.add('add-blur');
-    serviceItens[5].classList.add('add-blur');
+
+    if (e.target.classList.contains('service-buttons')) {
+        return
+    }
+
+    if (e.target.classList.contains('selected-button')) {
+        e.target.classList.remove('selected-button')
+    } else {
+        e.target.classList.add('selected-button')
+    }
+
+    serviceItems.forEach(serviceItem => serviceItem.classList.add('add-blur'))
+
+    for (buttonActive of document.getElementsByClassName('button-primary selected-button')) {
+        serviceItems.forEach(serviceItem => {
+            if (serviceItem.getAttribute('data-type') === buttonActive.id) {
+                serviceItem.classList.remove('add-blur')
+            }
+        })
+    }
+
+    checkAmount()
 })
 
-lawnButton.addEventListener("click", () =>{
-    const serviceItens = document.querySelectorAll('.service-items .service-item')
-
-    const serviceButtons = document.querySelectorAll('.service-buttons .button-primary')
-
-    for (i=0; i < serviceButtons.length; i++) {
-        if (serviceButtons[i].classList.contains('selected-button')) {
-            serviceButtons[i].classList.remove('selected-button')
+function checkAmount() {
+    let countButton = document.getElementsByClassName('button-primary selected-button').length;
+    serviceItems.forEach(serviceItem => {
+        if (countButton === 0) {
+            serviceItem.classList.remove('add-blur')
         }
-    }
-
-    serviceButtons[1].classList.add('selected-button');
-
+    })
+}
 
 
-    for (i=0; i < serviceItens.length; i++) {
-        if (serviceItens[i].classList.contains('add-blur')) {
-            serviceItens[i].classList.remove('add-blur')
-        }
-    }
-
-    serviceItens[0].classList.add('add-blur');
-    serviceItens[1].classList.add('add-blur');
-    serviceItens[3].classList.add('add-blur');
-    serviceItens[4].classList.add('add-blur');
-    serviceItens[5].classList.add('add-blur');
-})
-
-plantingButton.addEventListener("click", () =>{
-    const serviceItens = document.querySelectorAll('.service-items .service-item')
-
-    const serviceButtons = document.querySelectorAll('.service-buttons .button-primary')
-
-    for (i=0; i < serviceButtons.length; i++) {
-        if (serviceButtons[i].classList.contains('selected-button')) {
-            serviceButtons[i].classList.remove('selected-button')
-        }
-    }
-
-    serviceButtons[2].classList.add('selected-button');
 
 
-    for (i=0; i < serviceItens.length; i++) {
-        if (serviceItens[i].classList.contains('add-blur')) {
-            serviceItens[i].classList.remove('add-blur')
-        }
-    }
-    serviceItens[0].classList.add('add-blur');
-    serviceItens[2].classList.add('add-blur');
-    serviceItens[4].classList.add('add-blur');
-})
 
 
 
