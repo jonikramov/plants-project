@@ -335,7 +335,7 @@ p {
 }
 
 /*  Colors  */ /*  @mixin media-dekstop - @include media-dekstop */ /*  %transition -   @extend %transition;  */
-.instagram-link, .fb-link, .twitter-link, .pinterest-link, .footer-socials-item, .burger-nav-item-url, .burger-close, .nav-item-url, .button-add, .button-primary {
+.prices-btn, .prices-cost, .prices-text, .prices-line, .prices-list-bottom, .prices-list, .prices-lists, .instagram-link, .fb-link, .twitter-link, .pinterest-link, .footer-socials-item, .burger-nav-item-url, .burger-close, .nav-item-url, .button-add, .button-primary {
   transition: all 0.3s ease-out;
 }
 
@@ -1400,6 +1400,10 @@ h2 {
   }
 }
 
+.prices-lists-open {
+  height: 390px;
+}
+
 .prices-list {
   width: 250px;
   height: 50px;
@@ -1408,6 +1412,8 @@ h2 {
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  transition: 0.25s;
 }
 @media (max-width: 767px) {
   .prices-list {
@@ -1415,6 +1421,32 @@ h2 {
     height: 50px;
     padding: 16px 40px 15px 30px;
   }
+}
+
+.prices-list-open {
+  height: 154px;
+  background-color: #D6E7D2;
+}
+
+.prices-list-top {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-cost-number {
+  color: #E06733;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.prices-list-top {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .prices-list__title {
@@ -1438,15 +1470,27 @@ h2 {
   height: 16px;
   border-radius: 50%;
   background-color: #D9D9D9;
+  background-color: #D9D9D9;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.prices-list__dropdown > img {
-  width: 4px;
-  height: 2.35px;
+.dropdown-click {
+  background-color: #AEA1A1;
+}
+
+.dropdown-icon {
+  background: url(/assets/icons/dropdown.svg);
+  width: 6px;
+  height: 4px;
+}
+
+.dropdown-icon-open {
+  background: url(/assets/icons/dropup.svg);
+  width: 6px;
+  height: 4px;
 }
 
 .prices-contact-us {
@@ -1605,6 +1649,64 @@ h2 {
   .prices-button {
     margin: 0 auto;
   }
+}
+
+.prices-list-bottom {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.4s 0.5s;
+  display: none;
+  opacity: 0;
+}
+
+.prices-line {
+  width: 164px;
+  height: 0.5px;
+  background-color: #AEA1A1;
+  margin-bottom: 6px;
+}
+
+.prices-text {
+  width: 169px;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  color: #717171;
+}
+
+.prices-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 25px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #717171;
+  cursor: pointer;
+}
+
+.per-hour {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prices-btn a {
+  color: #717171;
+}
+
+.display-block {
+  display: block;
+  opacity: 1;
 }
 
 .contacts {

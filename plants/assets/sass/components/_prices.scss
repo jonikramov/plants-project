@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @extend %transition;
 
     @include media-tablet {
         margin-top: 55px;
@@ -71,6 +72,10 @@
     }
 }
 
+.prices-lists-open {
+    height: 390px;
+}
+
 .prices-list {
     width: 250px;
     height: 50px;
@@ -79,6 +84,9 @@
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    @extend %transition;
+    transition: 0.25s;
 
     @include media-mobile {
         width: 180px;
@@ -87,6 +95,40 @@
     }
 
 }
+
+.prices-list-open {
+    height: 154px;
+    background-color: #D6E7D2;
+
+
+    // @include media-mobile {
+    //     width: 180px;
+    //     // height: 50px;
+    //     padding: 16px 40px 15px 30px;
+    // }
+
+}
+
+.prices-list-top {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-cost-number {
+    color: #E06733;
+    @include font($size: 2.0rem, $height: 2.0rem, $weight:700);
+}
+
+
+.prices-list-top {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: red;
+}
+
 
 .prices-list__title {
     @extend %font-primary;
@@ -103,16 +145,30 @@
     height: 16px;
     border-radius: 50%;
     background-color: $color-dropdown;
+    background-color: #D9D9D9;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.prices-list__dropdown > img {
-    width: 4px;
-    height: 2.35px;
+.dropdown-click {
+    background-color: #AEA1A1;
 }
+
+.dropdown-icon {
+    background: url(/assets/icons/dropdown.svg);
+    width: 6px;
+    height: 4px;
+}
+
+.dropdown-icon-open {
+    background: url(/assets/icons/dropup.svg);
+    width: 6px;
+    height: 4px;
+
+}
+
 
 .prices-contact-us {
     display: flex;
@@ -255,6 +311,72 @@
         margin: 0 auto;
     }
 }
+
+
+.prices-list-bottom {
+    user-select: none;
+    @extend %transition;
+    transition: 0.4s 0.5s;
+    display: none;
+    opacity: 0;
+}
+
+.prices-line {
+    @extend %transition;
+    width: 164px;
+    height: 0.5px;
+    background-color: #AEA1A1;
+    margin-bottom: 6px;
+}
+
+.prices-text {
+    @extend %transition;
+    width: 169px;
+    @include font($size: 1.0rem, $height: 1.0rem, $weight:300);
+    color: #717171;
+
+}
+
+
+.prices-cost {
+    @extend %transition;
+}
+
+.prices-btn {
+    @extend %transition;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0;
+    @include font($size: 1.4rem, $height: 2.0rem, $weight:700);
+    color: #717171;
+    cursor: pointer;
+
+}
+
+
+.per-hour {
+    @include font($size: 1.2rem, $height: 1.2rem, $weight:400);
+}
+
+.prices-btn a {
+    color: #717171;
+}
+
+.display-block {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+
+
+
 
 
 

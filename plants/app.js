@@ -83,6 +83,41 @@ function checkAmount() {
 
 
 
+/* PRICE SECTION */
+
+const dropDown = document.querySelector('.prices-list__dropdown')
+const priceList = document.querySelector('.prices-list')
+const priceContent = document.querySelector('.prices-list-bottom')
+const dropDownIcon = document.querySelector('.dropdown-icon')
+const pricesLists = document.querySelectorAll('.prices-list')
+// console.log(pricesLists)
+
+dropDown.addEventListener('click', () => {
+    dropDown.classList.toggle('dropdown-click')
+    priceList.classList.toggle('prices-list-open')
+    priceContent.classList.toggle('display-block')
+    dropDownIcon.classList.toggle('dropdown-icon-open')
+    pricesLists.classList.toggle('prices-lists-open')
+})
+
+
+// const pricesLists = document.querySelectorAll('.prices-lists .prices-list')
+// console.log(pricesLists)
+
+// pricesLists.addEventListener('click', (e) => {
+
+
+//     if (e.target.classList.contains('prices-lists prices-list')) {
+//         // e.target.classList.add('')
+//     }
+// })
+
+
+
+
+
+
+
 
 
 
