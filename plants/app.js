@@ -85,20 +85,37 @@ function checkAmount() {
 
 /* PRICE SECTION */
 
-const dropDown = document.querySelector('.prices-list__dropdown')
-const priceList = document.querySelector('.prices-list')
-const priceContent = document.querySelector('.prices-list-bottom')
-const dropDownIcon = document.querySelector('.dropdown-icon')
-const pricesLists = document.querySelectorAll('.prices-list')
-// console.log(pricesLists)
+// const dropDown = document.querySelector('.prices-list__dropdown')
+// const priceList = document.querySelector('.prices-list')
+// const priceContent = document.querySelector('.prices-list-bottom')
+// const dropDownIcon = document.querySelector('.dropdown-icon')
+// const pricesLists = document.querySelectorAll('.prices-list')
+// // console.log(pricesLists)
 
-dropDown.addEventListener('click', () => {
-    dropDown.classList.toggle('dropdown-click')
-    priceList.classList.toggle('prices-list-open')
-    priceContent.classList.toggle('display-block')
-    dropDownIcon.classList.toggle('dropdown-icon-open')
-    pricesLists.classList.toggle('prices-lists-open')
-})
+
+
+// dropDown.addEventListener('click', () => {
+//     dropDown.classList.toggle('dropdown-click')
+//     priceList.classList.toggle('prices-list-open')
+//     priceContent.classList.toggle('display-none')
+//     dropDownIcon.classList.toggle('dropdown-icon-open')
+//     pricesLists.classList.toggle('prices-lists-open')
+// })
+
+// const dropDown = document.getElementsByClassName('prices-list__dropdown')
+// const priceList = document.querySelector('.prices-list')
+// const priceContent = document.querySelector('.prices-list-bottom')
+// const dropDownIcon = document.querySelector('.dropdown-icon')
+// const pricesLists = document.getElementsByClassName('.prices-list')
+
+// console.log(dropDown)
+
+// for (i=0; i < dropDown.length; i++) {
+//     dropDown[i].addEventListener('click', () => {
+//         // this.classList.toggle('dropdown-icon-open')
+//         alert(i)
+//     })
+// }
 
 
 // const pricesLists = document.querySelectorAll('.prices-lists .prices-list')
@@ -111,6 +128,89 @@ dropDown.addEventListener('click', () => {
 //         // e.target.classList.add('')
 //     }
 // })
+
+
+// const pricesLists = document.getElementsByClassName('prices-list')
+
+// console.log(pricesLists.length)
+
+
+// const dropDownIcon = document.getElementsByClassName('dropdown-icon')
+
+// for (i=0; i<dropDownIcon.length; i++) {
+//     dropDownIcon[i].addEventListener('click', function () {
+//       this.classList.toggle('active')
+//     })
+//   }
+
+// console.log(dropDownIcon)
+
+
+// const dropDown = document.getElementsByClassName('prices-list__dropdown')
+// const priceList = document.getElementsByClassName('prices-list')
+// const priceContent = document.getElementsByClassName('prices-list-bottom')
+// const pricesLists = document.getElementsByClassName('prices-list')
+// const dropDownIcon = document.getElementsByClassName('dropdown-icon')
+
+// for (i=0; i<dropDownIcon.length; i++) {
+//     dropDownIcon[i].addEventListener('click', function () {
+
+//     })
+//   }
+
+// console.log(dropDownIcon)
+
+// const dropDownBtns = document.querySelectorAll('.prices-list__dropdown')
+// const pricesLists = document.querySelectorAll('.prices-list')
+
+
+// dropDownBtns.forEach((dropDownButton) => {
+//     dropDownButton.addEventListener('click', () => {
+//         dropDownButton.classList.toggle('is-open');
+//     })
+// })
+
+const accordionTops = document.querySelectorAll('.prices-list-top')
+const pricesLists = document.querySelector('.prices-lists')
+
+accordionTops.forEach(item => {
+
+    if (pricesLists.classList.contains('is-open')) {
+        pricesLists.classList.remove('is-open');
+    } else {
+        pricesLists.classList.add('is-open');
+    }
+
+    item.addEventListener('click', () => {
+        if (item.classList.contains('is-open')) {
+            item.classList.remove('is-open')
+        } else {
+            const accordionsIsOpen = document.querySelectorAll('.is-open');
+            accordionsIsOpen.forEach( (accordionIsOpen) => {
+                accordionIsOpen.classList.remove('is-open')
+            })
+            item.classList.add('is-open')
+        }
+    })
+})
+
+
+// const pricesLists = document.querySelectorAll('.prices-list');
+
+// pricesLists.forEach(pricesList => {
+//     pricesList.addEventListener('click', () => {
+//         pricesList.classList.add('is-open')
+//     })
+// })
+
+
+
+
+
+
+
+
+
 
 
 

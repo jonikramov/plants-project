@@ -46,6 +46,7 @@
 .prices-lists {
     margin-top: 60px;
     width: 332px;
+    // height: 390px;
     height: 282px;
     border: 1px solid $color-border;
     border-radius: 20px;
@@ -54,6 +55,7 @@
     flex-direction: column;
     gap: 32px;
     @extend %transition;
+    transition: 0.4s 0.5s;
 
     @include media-tablet {
         margin-top: 55px;
@@ -63,6 +65,7 @@
         margin-top: 37px;
         width: 224px;
         height: 235px;
+        height: 390px;
         border: 1px solid $color-border;
         border-radius: 20px;
         padding: 29px 22px;
@@ -72,15 +75,23 @@
     }
 }
 
-.prices-lists-open {
+.prices-lists.is-open   {
     height: 390px;
 }
+
+
+
+// .prices-lists-open {
+//     height: 390px;
+// }
 
 .prices-list {
     width: 250px;
     height: 50px;
+    height: 154px;
     border-radius: 20px;
     background-color: $color-bg;
+    // background-color: #D6E7D2;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -96,23 +107,17 @@
 
 }
 
-.prices-list-open {
-    height: 154px;
-    background-color: #D6E7D2;
+// .prices-lists.is-open  .prices-list {
+//     height: 154px;
+//     background-color: #D6E7D2;
+// }
 
-
-    // @include media-mobile {
-    //     width: 180px;
-    //     // height: 50px;
-    //     padding: 16px 40px 15px 30px;
-    // }
-
-}
 
 .prices-list-top {
-    margin-bottom: 10px;
+    margin-bottom: 00px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .prices-cost-number {
@@ -150,11 +155,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
 }
 
-.dropdown-click {
-    background-color: #AEA1A1;
-}
+// .dropdown-click {
+//     background-color: #AEA1A1;
+// }
 
 .dropdown-icon {
     background: url(/assets/icons/dropdown.svg);
@@ -314,11 +320,8 @@
 
 
 .prices-list-bottom {
-    user-select: none;
     @extend %transition;
-    transition: 0.4s 0.5s;
-    display: none;
-    opacity: 0;
+
 }
 
 .prices-line {
@@ -366,21 +369,44 @@
     color: #717171;
 }
 
-.display-block {
-    display: block;
-    opacity: 1;
+
+// .prices-list-top.is-open .prices-list-top  {
+
+// }
+
+.prices-list-top.is-open .dropdown-icon  {
+    background: url(/assets/icons/dropup.svg);
+    width: 6px;
+    height: 4px;
+}
+
+.prices-list-top.is-open .prices-list  {
+    height: 154px;
+}
+
+.prices-list-top.is-open .prices-list__dropdown  {
+    background-color: #AEA1A1;
 }
 
 
+.prices-list-top + .prices-list-bottom {
+    display: none;
+
+}
+
+.prices-list-top.is-open + .prices-list-bottom {
+    display: block;
+}
+
+.prices-list-top.is-open + .prices-list-top {
+    display: block;
+    margin-bottom: 10px;
+}
 
 
-
-
-
-
-
-
-
+.prices-list-top.is-open {
+    margin-bottom: 10px;
+}
 
 
 
