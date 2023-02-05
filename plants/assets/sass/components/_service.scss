@@ -85,6 +85,10 @@
     border-radius: 20px;
     background-color: transparent;
     border: 1px solid $color-border;
+    @extend %transition-slider;
+
+
+
 
     @include media-tablet {
         width: 280px;
