@@ -335,7 +335,7 @@ p {
 }
 
 /*  Colors  */ /*  @mixin media-dekstop - @include media-dekstop */ /*  %transition -   @extend %transition;  */
-.prices-btn, .prices-cost, .prices-text, .prices-line, .prices-list-bottom, .prices-list, .prices-lists, .instagram-link, .fb-link, .twitter-link, .pinterest-link, .footer-socials-item, .burger-nav-item-url, .burger-close, .nav-item-url, .button-add, .button-primary {
+.prices-btn, .prices-cost, .prices-text, .prices-line, .prices-list-bottom, .prices-list, .instagram-link, .fb-link, .twitter-link, .pinterest-link, .footer-socials-item, .burger-nav-item-url, .burger-close, .nav-item-url, .button-add, .button-primary {
   transition: all 0.3s ease-out;
 }
 
@@ -1373,14 +1373,12 @@ h2 {
 .prices-lists {
   margin-top: 60px;
   width: 332px;
-  height: 282px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   padding: 34px 41px;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  transition: 0.4s 0.5s;
 }
 @media (max-width: 1150px) {
   .prices-lists {
@@ -1402,14 +1400,13 @@ h2 {
   }
 }
 
-.prices-lists.is-open {
+.prices-lists-open {
   height: 390px;
 }
 
 .prices-list {
   width: 250px;
   height: 50px;
-  height: 154px;
   border-radius: 20px;
   background-color: #EDF2EC;
   padding: 15px 40px;
@@ -1440,9 +1437,17 @@ h2 {
   font-weight: 700;
   font-style: normal;
 }
+@media (max-width: 767px) {
+  .prices-cost-number {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
 
 .prices-list-top {
-  width: 170px;
+  max-width: 170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1477,13 +1482,13 @@ h2 {
 }
 
 .dropdown-icon {
-  background: url(/assets/icons/dropdown.svg);
+  background: url(../../assets/icons/dropdown.svg);
   width: 6px;
   height: 4px;
 }
 
 .dropdown-icon-open {
-  background: url(/assets/icons/dropup.svg);
+  background: url(../../assets/icons/dropup.svg);
   width: 6px;
   height: 4px;
 }
@@ -1647,19 +1652,25 @@ h2 {
 }
 
 .prices-line {
-  width: 164px;
+  max-width: 164px;
   height: 0.5px;
   background-color: #AEA1A1;
   margin-bottom: 6px;
 }
 
 .prices-text {
-  width: 169px;
+  max-width: 164px;
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 300;
   font-style: normal;
   color: #717171;
+}
+
+@media (max-width: 1150px) {
+  .prices-cost {
+    display: block;
+  }
 }
 
 .prices-btn {
@@ -1690,17 +1701,17 @@ h2 {
 }
 
 .prices-list-top.is-open .dropdown-icon {
-  background: url(/assets/icons/dropup.svg);
+  background: url(../../assets/icons/dropup.svg);
   width: 6px;
   height: 4px;
 }
 
-.prices-list-top.is-open .prices-list {
-  height: 154px;
-}
-
 .prices-list-top.is-open .prices-list__dropdown {
   background-color: #AEA1A1;
+}
+
+.prices-list-top.is-open {
+  margin-bottom: 10px;
 }
 
 .prices-list-top + .prices-list-bottom {
@@ -1711,13 +1722,14 @@ h2 {
   display: block;
 }
 
-.prices-list-top.is-open + .prices-list-top {
-  display: block;
+.prices-list-top.is-open {
+  display: flex;
   margin-bottom: 10px;
 }
 
-.prices-list-top.is-open {
-  margin-bottom: 10px;
+.prices-list.is-open {
+  height: 154px;
+  background-color: #D6E7D2;
 }
 
 .contacts {
